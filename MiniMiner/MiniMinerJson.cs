@@ -35,8 +35,8 @@ public class MiniMinerJson
         for (var i = 0; i * 8 < difficulty; i++)
         {
             var bits = hash[i];
-            var restBits = difficulty - i * 8;
-            for (var j = (8 < restBits ? 8 : restBits); j > 0; j--)
+            var restBits = (i * 8) - difficulty;
+            for (var j = 8; j > 0 && j > restBits; j--)
             {
                 if ((bits & (1 << j - 1)) != 0) return false;
             }
