@@ -6,6 +6,7 @@
 **/.idea/shelf/*
 **/.idea/dictionaries
 **/.idea/httpRequests/
+**/.idea
 
 # Sensitive or high-churn files
 **/.idea/**/dataSources/
@@ -26,7 +27,7 @@
 .vs/
 [Bb]in/
 [Oo]bj/
-bin/
+**/obj/Debug
 **/bin/Debug
 _UpgradeReport_Files/
 [Pp]ackages/
